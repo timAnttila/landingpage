@@ -11,8 +11,6 @@ html {
 
 .logo {
   max-width: 6rem;
-  width: 100%;
-  height: auto;
 }
 
 .img-logo-container {
@@ -51,11 +49,13 @@ html {
 
 .hero-btn {
   background-color: #3882f6;
+  color: #e5e7eb;
   margin-top: 1.5rem;
   display: inline-block;
   padding: 0.5rem 2.5rem;
   border-radius: 0.8rem;
   text-decoration: none;
+  font-size: 1.6rem;
 
   &:hover {
     background-color: #1d5ed9;
@@ -73,18 +73,127 @@ html {
     font-weight: 900;
   }
 
-  .hero-btn,
   p {
     color: #e5e7eb;
     font-size: 1.8rem;
   }
 }
 
-.top-section-wrapper {
+.top-section-wrapper,
+header {
   background-color: #1f2937;
+  padding: 0 2rem;
 }
 
-.top-section-content-container {
+.top-section-content-container,
+.img-logo-container {
   max-width: 100rem;
   margin: 0 auto;
+}
+
+.destination-section-wrapper {
+  max-width: 100rem;
+  margin: 5rem auto 8rem;
+
+  img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 3.6rem;
+    font-weight: 900;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+
+    li {
+      display: block;
+    }
+  }
+}
+
+.citation-block {
+  display: flex;
+  justify-content: center;
+  background-color: #e5e7eb;
+  padding: 10rem 0;
+  > div {
+    display: flex;
+    flex-direction: column;
+
+    em {
+      font-size: 3.6rem;
+      font-weight: 300;
+      color: #1f2937;
+    }
+    p {
+      align-self: flex-end;
+      color: #1f2937;
+      font-weight: 900;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.call-to-action-section {
+  background-color: #3882f6;
+  color: #e5e7eb;
+  max-width: 100rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 9rem;
+  margin: 6rem auto 6rem;
+  border-radius: 0.5rem;
+
+  a {
+    color: #e5e7eb;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 0.5rem 2.5rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid #e5e7eb;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.call-to-action-text {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  p:first-child {
+    font-weight: 900;
+  }
+}
+
+footer {
+  background-color: #1f2937;
+  padding: 3rem 0;
+
+  p {
+    max-width: 100rem;
+    margin: 0 auto;
+    color: #e5e7eb;
+    text-align: center;
+    font-size: 1.2rem;
+  }
 }
